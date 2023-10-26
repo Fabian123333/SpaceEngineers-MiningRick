@@ -1,3 +1,18 @@
+const float SlowMovementSpeed = 0.2f;
+const float FastMovementSpeed = 4f;
+
+float InitialDepth = 10;
+float layerDepth = 1.8f;
+float rowWidth = 3f;
+
+Vector3 positionOffset = new Vector3(10, 10, 0);
+
+int currentLayer = 0;
+int currentRow = 0;
+float currentY = 0;
+bool lastRow = false;
+float DepthTarget = 0;
+
 List<IMyShipDrill> drills = new List<IMyShipDrill>();
 
 IMyBlockGroup pistonDownGroup;
@@ -17,21 +32,6 @@ List<IMyPistonBase> pistonLeft = new List<IMyPistonBase>();
 
 IMyBlockGroup pistonRightGroup;
 List<IMyPistonBase> pistonRight = new List<IMyPistonBase>();
-
-const float SlowMovementSpeed = 0.2f;
-const float FastMovementSpeed = 4f;
-
-float InitialDepth = 10;
-float layerDepth = 1.8f;
-float rowWidth = 3f;
-
-Vector3 positionOffset = new Vector3(10, 10, 0);
-
-int currentLayer = 0;
-int currentRow = 0;
-float currentY = 0;
-bool lastRow = false;
-float DepthTarget = 0;
 
 public enum Axis{
     X,
