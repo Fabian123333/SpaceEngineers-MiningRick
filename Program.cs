@@ -21,13 +21,11 @@ List<IMyPistonBase> pistonRight = new List<IMyPistonBase>();
 const float SlowMovementSpeed = 0.2f;
 const float FastMovementSpeed = 4f;
 
-Vector3 positionOffset = new Vector3(10, 10, 0);
-
 float InitialDepth = 10;
-
 float layerDepth = 1.8f;
-
 float rowWidth = 3f;
+
+Vector3 positionOffset = new Vector3(10, 10, 0);
 
 int currentLayer = 0;
 int currentRow = 0;
