@@ -25,9 +25,9 @@ Vector3 positionOffset = new Vector3(10, 10, 0);
 
 float InitialDepth = 10;
 
-float layerDepth = 1f;
+float layerDepth = 1.8f;
 
-float rowWidth = 1.8f;
+float rowWidth = 3f;
 
 int currentLayer = 0;
 int currentRow = 0;
