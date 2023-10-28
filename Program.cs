@@ -260,7 +260,6 @@ private bool ExtendAxis(Axis axis) {
 }
 
 private bool RetractAxis(Axis axis) {
-    Echo("RetractAxis call");
     switch(axis){
         case Axis.X:
             foreach(IMyPistonBase piston in pistonLeft){
@@ -451,6 +450,11 @@ public void Load(string args){
 
 public void Main(string argument, UpdateType updateType)
 {   
+    if(argument == "reset"){
+        CurrentState = State.None;
+        return;
+    }
+    
     switch(CurrentState){
         case State.None:
             Echo("start auto miner");
@@ -579,4 +583,3 @@ public void Main(string argument, UpdateType updateType)
             break;
     }
 }
-used
