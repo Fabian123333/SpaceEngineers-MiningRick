@@ -13,3 +13,6 @@ piston-grid-back
 ```
 
 In addition, the drills have to be added to the group `drill`
+
+# Commands
+`reset` => reset the minig process, recenter
